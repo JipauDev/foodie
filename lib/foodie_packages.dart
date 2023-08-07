@@ -1,4 +1,4 @@
-library event;
+library foodie;
 
 export 'modal/modal_event.dart';
 export 'modal/modal_intro.dart';
