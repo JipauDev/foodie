@@ -19,6 +19,7 @@ class Food {
   double? lat;
   num? price;
   String? driver;
+  String? payment;
   String? title;
   int? count;
   List? photoGallery;
@@ -49,6 +50,7 @@ num? totalPrice;
       this.description,
       this.id,
       this.location,
+    this.payment,
       this.price,
       this.title,
       this.count,
@@ -93,6 +95,7 @@ num? totalPrice;
     quantity: data['quantity']??1,
     totalPrice: data['totalPrice']??0,
     description  : data['description']??"",
+      payment: data['payment'] ?? "",
     id  : snapshot.id,
     latLng: latLng,
     image: data["image"]??'',
